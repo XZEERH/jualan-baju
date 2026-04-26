@@ -1,0 +1,52 @@
+# Dependencies
+# Jangan pernah mengunggah folder ini karena sangat berat
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+
+# Production / Build Output
+# Folder dist adalah hasil kompilasi yang akan dibuat ulang oleh Vercel
+dist/
+build/
+out/
+
+# Vite Cache
+.vite/
+
+# Environment Variables
+# Sangat penting untuk keamanan agar API Key atau password database tidak bocor
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vercel
+# Folder konfigurasi lokal Vercel
+.vercel
+
+# TypeScript
+# File cache untuk mempercepat kompilasi TS
+*.tsbuildinfo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+eslintcache
+
+# OS Metadata
+# File sampah dari sistem operasi (Mac/Windows)
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+# Agar settingan pribadi editor Anda tidak memaksa orang lain
+.vscode/
+.idea/
+*.swp
+*.swo
