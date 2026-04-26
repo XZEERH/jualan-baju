@@ -6,9 +6,11 @@ interface ProductProps {
 }
 
 const ProductCard = ({ name, price, image, badge }: ProductProps) => {
-  // Optimasi Gambar: w=400 & q=60 (Anti-Lag)
-  const optimizedImage = `${image}&w=400&q=60`;
-  const waLink = `https://wa.me/6283865255697?text=Halo%20Rama%20Shop,%20saya%20tertarik%20dengan%20${name}`;
+  // LOGIKA PINTAR: Cek apakah link sudah punya "?" atau belum
+  const separator = image.includes('?') ? '&' : '?';
+  const optimizedImage = `${image}${separator}w=400&q=60`;
+  
+  const waLink = `https://wa.me/6283865255697?text=Halo%20Razeerh%20Shop,%20saya%20tertarik%20dengan%20${name}`;
 
   return (
     <div className="group fade-in flex flex-col items-center text-center">
@@ -18,7 +20,16 @@ const ProductCard = ({ name, price, image, badge }: ProductProps) => {
             {badge}
           </span>
         )}
-        <img src={optimizedImage} alt={name} loading="lazy" className="w-full h-full object-cover grayscale-hover" />
+        <img 
+          src={optimizedImage} 
+          alt={name} 
+          loading="lazy" 
+          className="w-full h-full object-cover grayscale-hover"
+          // Jika gambar gagal muat, dia akan pakai placeholder abu-abu
+          onError={(e) => {
+            (e.target as HTMLImageElement).src = "https://via.placeholder.com/400x600?text=Image+Not+Found";
+          }}
+        />
       </div>
       <h3 className="text-[10px] font-bold uppercase tracking-widest leading-none">{name}</h3>
       <p className="text-[11px] text-gray-400 mt-2">{price}</p>
@@ -28,4 +39,5 @@ const ProductCard = ({ name, price, image, badge }: ProductProps) => {
     </div>
   );
 };
+
 export default ProductCard;
