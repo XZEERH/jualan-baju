@@ -11,7 +11,7 @@ const Footer = () => {
               <Mail className="w-4 h-4" /> <span className="text-xs tracking-widest">razeerh08@gmail.com</span>
             </a>
             <div className="flex items-center space-x-3">
-              <Phone className="w-4 h-4" /> <span className="text-xs tracking-widest">+62 812 3456 789</span>
+              <Phone className="w-4 h-4" /> <span className="text-xs tracking-widest">+62 838 6525 5697</span>
             </div>
           </div>
         </div>
@@ -19,16 +19,16 @@ const Footer = () => {
           <h4 className="text-[9px] font-bold uppercase tracking-[0.3em] text-gray-500 mb-6">Social</h4>
           <div className="flex flex-wrap gap-5">
             <a href="https://instagram.com/razeerh.edukasi" className="flex items-center space-x-2 hover:opacity-50 transition">
-              <Instagram className="w-4 h-4" /> <span className="text-[9px] uppercase font-bold tracking-widest">IG</span>
+              <Instagram className="w-4 h-4" /> <span className="text-[9px] uppercase font-bold tracking-widest">INSTAGRAM</span>
             </a>
             <a href="https://tiktok.com/razeerh.edukasi" className="flex items-center space-x-2 hover:opacity-50 transition">
-              <Music2 className="w-4 h-4" /> <span className="text-[9px] uppercase font-bold tracking-widest">TK</span>
+              <Music2 className="w-4 h-4" /> <span className="text-[9px] uppercase font-bold tracking-widest">TIKTOK</span>
             </a>
             <a href="https://facebook.com" className="flex items-center space-x-2 hover:opacity-50 transition">
-              <Facebook className="w-4 h-4" /> <span className="text-[9px] uppercase font-bold tracking-widest">FB</span>
+              <Facebook className="w-4 h-4" /> <span className="text-[9px] uppercase font-bold tracking-widest">FACEBOOK</span>
             </a>
             <a href="https://twitter.com" className="flex items-center space-x-2 hover:opacity-50 transition">
-              <Twitter className="w-4 h-4" /> <span className="text-[9px] uppercase font-bold tracking-widest">TW</span>
+              <Twitter className="w-4 h-4" /> <span className="text-[9px] uppercase font-bold tracking-widest">TWITTER</span>
             </a>
           </div>
         </div>
