@@ -13,7 +13,7 @@ function App() {
         <section id="hero"><Hero /></section>
         <section id="shop" className="py-24 px-6 max-w-7xl mx-auto">
           <div className="flex flex-col items-center mb-16 text-center">
-            <h2 className="text-2xl font-bold tracking-tighter uppercase mb-2">New Arrivals</h2>
+            <h2 className="text-2xl font-bold tracking-tighter uppercase mb-2">Our Products</h2>
             <div className="h-px w-12 bg-black"></div>
           </div>
           <ProductGrid />
