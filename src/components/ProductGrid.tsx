@@ -36,6 +36,13 @@ const products = [
     image: "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop",
     badge: "New"
   },
+  { 
+    id: 6, 
+    name: "Kemeja Distro", 
+    price: "IDR 85.000", 
+    image: "https://www.image2url.com/r2/default/images/1777177723022-ee823013-945a-4622-bfe7-48d28769b56a.webp",
+    badge: "New"
+  },
 ];
 
 const ProductGrid = () => {
