@@ -8,7 +8,7 @@ interface ProductProps {
 const ProductCard = ({ name, price, image, badge }: ProductProps) => {
   // Optimasi Gambar: w=400 & q=60 (Anti-Lag)
   const optimizedImage = `${image}&w=400&q=60`;
-  const waLink = `https://wa.me/628123456789?text=Halo%20Rama%20Shop,%20saya%20tertarik%20dengan%20${name}`;
+  const waLink = `https://wa.me/6283865255697?text=Halo%20Rama%20Shop,%20saya%20tertarik%20dengan%20${name}`;
 
   return (
     <div className="group fade-in flex flex-col items-center text-center">
