@@ -5,30 +5,27 @@
 html { scroll-behavior: smooth; }
 
 .font-signature {
-  font-family: 'Dancing Script', cursive;
-  transform: rotate(-2deg);
-  display: inline-block;
+  font-family: 'Dancing Script', cursive !important;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
+  from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
+.fade-in { animation: fadeIn 0.6s ease-out forwards; }
+
 @keyframes pulse-soft {
-  0% { transform: scale(1); opacity: 0.8; }
-  50% { transform: scale(1.05); opacity: 1; }
-  100% { transform: scale(1); opacity: 0.8; }
+  0%, 100% { opacity: 0.7; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.03); }
 }
 
-.fade-in { animation: fadeIn 0.8s ease-out forwards; }
 .animate-pulse-soft { animation: pulse-soft 2s infinite ease-in-out; }
 
 .grayscale-hover {
   filter: grayscale(100%);
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
 }
 .grayscale-hover:hover {
   filter: grayscale(0%);
-  transform: scale(1.03);
 }
