@@ -7,8 +7,8 @@ const Footer = () => {
         <div>
           <h4 className="text-[9px] font-bold uppercase tracking-[0.3em] text-gray-500 mb-6">Contact</h4>
           <div className="space-y-4">
-            <a href="mailto:hello@ramashop.com" className="flex items-center space-x-3 hover:text-gray-400 transition">
-              <Mail className="w-4 h-4" /> <span className="text-xs tracking-widest">hello@ramashop.com</span>
+            <a href="mailto:razeerh08@gmail.com" className="flex items-center space-x-3 hover:text-gray-400 transition">
+              <Mail className="w-4 h-4" /> <span className="text-xs tracking-widest">razeerh08@gmail.com</span>
             </a>
             <div className="flex items-center space-x-3">
               <Phone className="w-4 h-4" /> <span className="text-xs tracking-widest">+62 812 3456 789</span>
@@ -18,10 +18,10 @@ const Footer = () => {
         <div>
           <h4 className="text-[9px] font-bold uppercase tracking-[0.3em] text-gray-500 mb-6">Social</h4>
           <div className="flex flex-wrap gap-5">
-            <a href="https://instagram.com" className="flex items-center space-x-2 hover:opacity-50 transition">
+            <a href="https://instagram.com/razeerh.edukasi" className="flex items-center space-x-2 hover:opacity-50 transition">
               <Instagram className="w-4 h-4" /> <span className="text-[9px] uppercase font-bold tracking-widest">IG</span>
             </a>
-            <a href="https://tiktok.com" className="flex items-center space-x-2 hover:opacity-50 transition">
+            <a href="https://tiktok.com/razeerh.edukasi" className="flex items-center space-x-2 hover:opacity-50 transition">
               <Music2 className="w-4 h-4" /> <span className="text-[9px] uppercase font-bold tracking-widest">TK</span>
             </a>
             <a href="https://facebook.com" className="flex items-center space-x-2 hover:opacity-50 transition">
@@ -33,7 +33,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="mt-10 text-center text-[8px] text-gray-400 uppercase tracking-[0.4em]">© 2024 Rama Shop Studio. All Rights Reserved.</p>
+      <p className="mt-10 text-center text-[8px] text-gray-400 uppercase tracking-[0.4em]">© 2026 Razeerh Shop Studio. All Rights Reserved.</p>
     </footer>
   );
 };
