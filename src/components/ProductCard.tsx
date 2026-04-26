@@ -6,29 +6,26 @@ interface ProductProps {
 }
 
 const ProductCard = ({ name, price, image, badge }: ProductProps) => {
+  // Optimasi Gambar: w=400 & q=60 (Anti-Lag)
+  const optimizedImage = `${image}&w=400&q=60`;
   const waLink = `https://wa.me/628123456789?text=Halo%20Rama%20Shop,%20saya%20tertarik%20dengan%20${name}`;
 
   return (
-    <div className="group fade-in">
-      <div className="relative aspect-[3/4] overflow-hidden bg-gray-100 mb-5 rounded-sm">
+    <div className="group fade-in flex flex-col items-center text-center">
+      <div className="relative w-full aspect-[3/4] overflow-hidden bg-gray-50 mb-4 rounded-sm">
         {badge && (
-          <span className="absolute top-4 left-4 z-10 bg-black text-white text-[9px] px-2 py-1 uppercase tracking-widest font-bold">
+          <span className="absolute top-3 left-3 z-10 bg-black text-white text-[8px] px-2 py-1 uppercase font-bold tracking-tighter">
             {badge}
           </span>
         )}
-        <img src={image} alt={name} className="w-full h-full object-cover grayscale-hover" />
+        <img src={optimizedImage} alt={name} loading="lazy" className="w-full h-full object-cover grayscale-hover" />
       </div>
-      <h3 className="text-[11px] font-bold uppercase tracking-widest">{name}</h3>
-      <p className="text-sm text-gray-400 mt-1">{price}</p>
-      <a 
-        href={waLink} 
-        target="_blank" 
-        className="font-signature text-xl text-black block mt-2 animate-pulse-soft hover:text-gray-500"
-      >
+      <h3 className="text-[10px] font-bold uppercase tracking-widest leading-none">{name}</h3>
+      <p className="text-[11px] text-gray-400 mt-2">{price}</p>
+      <a href={waLink} target="_blank" className="font-signature text-xl text-black mt-2 animate-pulse-soft inline-block">
         pesan sekarang
       </a>
     </div>
   );
 };
-
 export default ProductCard;
