@@ -2,7 +2,7 @@ const About = () => {
   return (
     <section id="about" className="py-24 bg-white px-6">
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-[10px] font-bold uppercase tracking-[0.5em] mb-12 text-gray-300 italic underline underline-offset-8">Our Story</h2>
+        <h2 className="text-[10px] font-bold uppercase tracking-[0.5em] mb-12 text-gray-300 italic underline underline-offset-8">About Us</h2>
         <div className="space-y-10 text-black leading-snug">
           <p className="font-signature text-2xl md:text-4xl fade-in">
             Selamat datang di Razeerh Shop. Kami percaya bahwa setiap orang berhak tampil elegan tanpa harus berkompromi dengan kenyamanan. Koleksi kami dirancang dengan filosofi minimalisme yang tajam, memastikan setiap helai pakaian memberikan kesan eksklusif dan profesional.
