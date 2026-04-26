@@ -2,7 +2,7 @@ import { Instagram, Facebook, Twitter, Mail, Phone, Music2 } from 'lucide-react'
 
 const Footer = () => {
   return (
-    <footer className="bg-[#f9f9f9] pt-20 pb-12 px-6">
+    <footer id="footer" className="bg-[#f9f9f9] pt-20 pb-12 px-6">
       <div className="max-w-6xl mx-auto bg-[#121212] rounded-[2rem] p-10 md:p-16 text-white grid grid-cols-1 md:grid-cols-2 gap-16">
         <div>
           <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-500 mb-8">Contact & Support</h4>
