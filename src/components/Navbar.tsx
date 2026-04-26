@@ -25,12 +25,13 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - Sekarang lebih ramping & kecil */}
       {isOpen && (
-        <div className="fixed inset-0 top-16 bg-white z-[99] flex flex-col items-center justify-center space-y-10 text-2xl font-light uppercase tracking-[0.2em] fade-in md:hidden">
-          <a href="#hero" onClick={() => setIsOpen(false)}>Home</a>
-          <a href="#shop" onClick={() => setIsOpen(false)}>Shop</a>
-          <a href="#about" onClick={() => setIsOpen(false)}>About</a>
+        <div className="fixed inset-0 top-16 bg-white z-[99] flex flex-col items-center justify-center space-y-6 text-sm font-bold uppercase tracking-[0.3em] fade-in md:hidden">
+          <a href="#hero" onClick={() => setIsOpen(false)} className="hover:text-gray-500">Home</a>
+          <a href="#shop" onClick={() => setIsOpen(false)} className="hover:text-gray-500">Shop</a>
+          <a href="#about" onClick={() => setIsOpen(false)} className="hover:text-gray-500">About</a>
+          <a href="#footer" onClick={() => setIsOpen(false)} className="hover:text-gray-500">Contact</a>
         </div>
       )}
     </nav>
