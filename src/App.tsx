@@ -1,27 +1,27 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import ProductGrid from './components/ProductGrid'
-import SizeChart from './components/SizeChart'
 import About from './components/About'
+import SizeChart from './components/SizeChart'
 import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen selection:bg-black selection:text-white">
       <Navbar />
       <main>
         <section id="hero"><Hero /></section>
-        <section id="shop" className="py-32 px-6 max-w-7xl mx-auto">
-          <div className="flex flex-col items-center mb-20 text-center">
-            <h2 className="text-3xl font-bold tracking-tighter uppercase mb-2">New Arrivals</h2>
-            <div className="h-px w-20 bg-black"></div>
+        <section id="shop" className="py-24 px-6 max-w-7xl mx-auto">
+          <div className="flex flex-col items-center mb-16 text-center">
+            <h2 className="text-2xl font-bold tracking-tighter uppercase mb-2">New Arrivals</h2>
+            <div className="h-px w-12 bg-black"></div>
           </div>
           <ProductGrid />
         </section>
         <About />
-        <section id="size-chart" className="py-32 bg-[#f4f4f4]">
-          <div className="max-w-4xl mx-auto px-6 text-center">
-            <h2 className="text-xl font-bold mb-12 tracking-[0.3em] uppercase italic">Size Guide</h2>
+        <section id="size-chart" className="py-24 bg-white">
+          <div className="max-w-3xl mx-auto px-6 text-center">
+            <h2 className="text-sm font-bold mb-12 tracking-[0.4em] uppercase italic">Size Guide</h2>
             <SizeChart />
           </div>
         </section>
